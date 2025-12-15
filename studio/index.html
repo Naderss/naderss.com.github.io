@@ -1,247 +1,63 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nader Shakibay Senobari | Research • nAIpoints • Studio</title>
-  <meta name="description" content="Nader Shakibay Senobari — Seismology, AI & time-series analysis, and art/design." />
+  <meta charset="utf-8">
+  <title>Studio | Nader Shakibay Senobari</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Studio work by Nader Shakibay Senobari — art, design, and functional objects.">
 
-  <style>
-    :root{
-      --bg:#0b0c10;
-      --card:#11131a;
-      --text:#e8e9ee;
-      --muted:#b6b9c6;
-      --line:#23263a;
-      --accent:#7aa2ff;
-      --accent2:#7cffc1;
-      --max:980px;
-      --r:14px;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0; padding:0; background:var(--bg); color:var(--text); font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
-    a{color:inherit}
-    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 70px}
-    header{padding:34px 0 14px}
-    .kicker{color:var(--muted); letter-spacing:.02em}
-    h1{margin:8px 0 10px; font-size:38px; line-height:1.1}
-    .subtitle{color:var(--muted); max-width:70ch}
-    .btns{display:flex; flex-wrap:wrap; gap:10px; margin-top:18px}
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center;
-      padding:10px 14px; border-radius:999px; border:1px solid var(--line);
-      background:transparent; text-decoration:none; color:var(--text);
-    }
-    .btn.primary{border-color:transparent; background:linear-gradient(135deg,var(--accent),#5b7cfa)}
-    .btn.secondary{border-color:transparent; background:linear-gradient(135deg,var(--accent2),#35d49b); color:#08110d}
-    nav{position:sticky; top:0; z-index:10; background:rgba(11,12,16,.82); backdrop-filter:blur(10px); border-bottom:1px solid var(--line)}
-    nav .bar{max-width:var(--max); margin:0 auto; padding:10px 18px; display:flex; gap:16px; overflow:auto}
-    nav a{color:var(--muted); text-decoration:none; white-space:nowrap; padding:6px 10px; border-radius:999px}
-    nav a:hover{color:var(--text); background:#0f1118}
-    section{margin-top:22px; padding-top:18px}
-    .grid{display:grid; gap:14px; grid-template-columns:1fr}
-    @media (min-width:840px){
-      .grid.two{grid-template-columns:1fr 1fr}
-      .grid.three{grid-template-columns:1fr 1fr 1fr}
-    }
-    .card{
-      background:var(--card); border:1px solid var(--line);
-      border-radius:var(--r); padding:16px 16px 14px
-    }
-    h2{margin:0 0 10px; font-size:22px}
-    h3{margin:0 0 8px; font-size:16px}
-    p{margin:0 0 10px}
-    ul{margin:10px 0 0 18px; color:var(--muted)}
-    li{margin:6px 0}
-    .tag{display:inline-block; font-size:12px; color:var(--muted); border:1px solid var(--line); padding:4px 9px; border-radius:999px; margin:6px 6px 0 0}
-    .hr{height:1px; background:var(--line); margin:16px 0}
-    .small{font-size:13px; color:var(--muted)}
-    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
-    .gallery{display:grid; gap:10px; grid-template-columns:repeat(2,1fr)}
-    @media (min-width:840px){ .gallery{grid-template-columns:repeat(4,1fr)} }
-    .ph{
-      aspect-ratio: 4/3; border-radius:12px; border:1px dashed #2a2f4a;
-      display:flex; align-items:center; justify-content:center; color:#8b90a6; background:#0f1118;
-      text-align:center; padding:10px
-    }
-    footer{margin-top:38px; color:var(--muted)}
-    .pill{
-      display:inline-flex; gap:8px; align-items:center; padding:9px 12px;
-      border-radius:12px; border:1px solid var(--line); background:#0f1118;
-      text-decoration:none
-    }
-  </style>
+  <link rel="stylesheet" href="/assets/style.css">
 </head>
 
 <body>
 
-<nav>
-  <div class="bar">
-    <a href="#home">Home</a>
-    <a href="#research">Research</a>
-    <a href="#naipoints">nAIpoints</a>
-    <a href="#studio">Studio</a>
-    <a href="#contact">Contact</a>
-  </div>
+<nav class="site-nav">
+  <a href="/">Home</a>
+  <a href="/research/">Research</a>
+  <a href="/naipoints/">nAIpoints</a>
+  <a href="/studio/" aria-current="page">Studio</a>
+  <a href="/contact/">Contact</a>
 </nav>
 
-<div class="wrap" id="home">
+<main class="wrap">
   <header>
-    <div class="kicker">Nader Shakibay Senobari, PhD</div>
-    <h1>Seismology • AI & Time-Series • Art & Design</h1>
+    <h1>Studio</h1>
     <p class="subtitle">
-      I develop quantitative methods for extracting physically meaningful signals from seismic and acoustic observations,
-      and I build design-led work spanning functional furniture and visual art.
+      Art and design work exploring structure, material behavior, and pattern.
     </p>
-
-    <div class="btns">
-      <a class="btn primary" href="#research">Research</a>
-      <a class="btn secondary" href="#naipoints">nAIpoints</a>
-      <a class="btn" href="#studio">Studio</a>
-      <a class="btn" href="#contact">Contact</a>
-    </div>
   </header>
 
-  <div class="grid two">
-    <div class="card">
-      <h2>Current Focus</h2>
-      <ul>
-        <li>Seismic/acoustic time-series analysis, waveform similarity, and scalable detection</li>
-        <li>Passive monitoring of stress evolution and fault-zone processes</li>
-        <li>Bridging scientific inference with design: clarity, structure, and craft</li>
-      </ul>
-      <div class="hr"></div>
-      <div class="tag">Seismology</div>
-      <div class="tag">Signal Processing</div>
-      <div class="tag">Machine Learning</div>
-      <div class="tag">Design</div>
-    </div>
-
-    <div class="card">
-      <h2>Quick Links</h2>
-      <p class="small">Replace these with your preferred destinations.</p>
-      <p><a class="pill" href="#" target="_blank" rel="noopener">Google Scholar</a></p>
-      <p><a class="pill" href="#" target="_blank" rel="noopener">GitHub</a></p>
-      <p><a class="pill" href="#" target="_blank" rel="noopener">LinkedIn</a></p>
-      <p><a class="pill" href="#" target="_blank" rel="noopener">CV (PDF)</a></p>
-    </div>
-  </div>
-
-  <section id="research">
-    <h2>Research</h2>
-    <div class="grid two">
-      <div class="card">
-        <h3>Summary</h3>
-        <p>
-          My work develops data-driven and physics-informed approaches to detect subtle, repeatable structure in seismic
-          observations across laboratory and tectonic scales, with emphasis on interpretability and reproducibility.
-        </p>
-        <ul>
-          <li>Waveform similarity, clustering, and detection at scale</li>
-          <li>Time–frequency features and passive monitoring strategies</li>
-          <li>Linking signals to physical mechanisms (loading, creep, instability)</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Selected Publications</h3>
-        <ul>
-          <li><span class="mono">2019 GRL</span> — Widespread fault creep in the North Bay revealed by multistation cluster detection of repeating earthquakes</li>
-          <li><span class="mono">…</span> Add 3–6 additional items (title, venue, year)</li>
-        </ul>
-        <p class="small">Tip: keep this short; link to a full list via Google Scholar.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="naipoints">
-    <h2>nAIpoints</h2>
-    <div class="grid two">
-      <div class="card">
-        <h3>What we do</h3>
-        <p>
-          nAIpoints applies time-series inference and signal processing to passive sensing problems where stress evolution,
-          damage, or stability must be monitored without interrupting operations.
-        </p>
-        <ul>
-          <li>Earthquake hazard monitoring and precursory pattern discovery</li>
-          <li>Infrastructure integrity and vibration/acoustic surveillance</li>
-          <li>Energy and subsurface operations monitoring (where data access permits)</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Partnerships</h3>
-        <p class="small">
-          If you have continuous sensing data (seismic, acoustic, DAS, vibration) and a monitoring problem, contact:
-        </p>
-        <p><a class="pill" href="mailto:naipoints@naderss.com">naipoints@naderss.com</a></p>
-        <p class="small">Add a one-page PDF here later (“Capabilities / One-pager”).</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="studio">
-    <h2>Studio (Art & Design)</h2>
-    <div class="grid two">
-      <div class="card">
-        <h3>Statement</h3>
-        <p>
-          I build objects and images where structure and material behavior remain visible: functional pieces, resin–wood work,
-          and studies that translate pattern into form.
-        </p>
-        <div class="hr"></div>
-        <p class="small">Replace placeholders below with photos of your work.</p>
-      </div>
-
-      <div class="card">
-        <h3>Inquiries</h3>
-        <p class="small">Commissions, collaborations, exhibitions, and design requests:</p>
-        <p><a class="pill" href="mailto:studio@naderss.com">studio@naderss.com</a></p>
-        <p class="small">If you prefer a different alias, change it here.</p>
-      </div>
-    </div>
-
-    <div class="gallery" style="margin-top:14px">
-      <div class="ph">Artwork / furniture photo #1</div>
-      <div class="ph">Photo #2</div>
-      <div class="ph">Photo #3</div>
-      <div class="ph">Photo #4</div>
-      <div class="ph">Photo #5</div>
-      <div class="ph">Photo #6</div>
-      <div class="ph">Photo #7</div>
-      <div class="ph">Photo #8</div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="grid three">
-      <div class="card">
-        <h3>General / Academic</h3>
-        <p><a class="pill" href="mailto:nader@naderss.com">nader@naderss.com</a></p>
-      </div>
-      <div class="card">
-        <h3>nAIpoints</h3>
-        <p><a class="pill" href="mailto:naipoints@naderss.com">naipoints@naderss.com</a></p>
-      </div>
-      <div class="card">
-        <h3>Studio</h3>
-        <p><a class="pill" href="mailto:studio@naderss.com">studio@naderss.com</a></p>
-        <p class="small">Create this alias in Zoho if you have not yet.</p>
-      </div>
-    </div>
-
-    <div class="hr"></div>
-    <p class="small">
-      © <span id="yr"></span> Nader Shakibay Senobari. Built as a lightweight static site.
+  <section>
+    <h2>Statement</h2>
+    <p>
+      I create functional and visual pieces where structure remains legible and material
+      behavior is allowed to speak. Current work includes resin–wood furniture,
+      sculptural objects, and pattern-driven visual studies.
     </p>
   </section>
 
-  <footer class="small">
-    Tip: when you are ready for the business card, you can print just the domain (<span class="mono">naderss.com</span>) and keep emails on the site.
-  </footer>
-</div>
+  <section>
+    <h2>Selected Work</h2>
+    <div class="gallery">
+      <div class="ph">Image 1</div>
+      <div class="ph">Image 2</div>
+      <div class="ph">Image 3</div>
+      <div class="ph">Image 4</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Inquiries</h2>
+    <p>
+      Commissions, collaborations, and exhibitions:
+      <a href="mailto:studio@naderss.com">studio@naderss.com</a>
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>© <span id="yr"></span> Nader Shakibay Senobari</p>
+</footer>
 
 <script>
   document.getElementById("yr").textContent = new Date().getFullYear();
@@ -249,4 +65,3 @@
 
 </body>
 </html>
-
