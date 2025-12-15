@@ -1,0 +1,52 @@
+:root{
+  --bg:#0b0c10;
+  --card:#11131a;
+  --text:#e8e9ee;
+  --muted:#b6b9c6;
+  --line:#23263a;
+  --accent:#7aa2ff;
+  --accent2:#7cffc1;
+  --max:980px;
+  --r:14px;
+}
+*{box-sizing:border-box}
+html,body{margin:0; padding:0; background:var(--bg); color:var(--text); font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+a{color:inherit}
+.wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 70px}
+header{padding:18px 0 8px}
+.kicker{color:var(--muted); letter-spacing:.02em}
+h1{margin:8px 0 10px; font-size:36px; line-height:1.1}
+.subtitle{color:var(--muted); max-width:75ch}
+h2{margin:0 0 10px; font-size:22px}
+h3{margin:0 0 8px; font-size:16px}
+p{margin:0 0 10px}
+ul{margin:10px 0 0 18px; color:var(--muted)}
+li{margin:6px 0}
+.grid{display:grid; gap:14px; grid-template-columns:1fr}
+@media (min-width:840px){ .grid.two{grid-template-columns:1fr 1fr} .grid.three{grid-template-columns:1fr 1fr 1fr} }
+.card{background:var(--card); border:1px solid var(--line); border-radius:var(--r); padding:16px 16px 14px}
+.hr{height:1px; background:var(--line); margin:16px 0}
+.small{font-size:13px; color:var(--muted)}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+.pill{display:inline-flex; gap:8px; align-items:center; padding:9px 12px; border-radius:12px; border:1px solid var(--line); background:#0f1118; text-decoration:none}
+.tag{display:inline-block; font-size:12px; color:var(--muted); border:1px solid var(--line); padding:4px 9px; border-radius:999px; margin:6px 6px 0 0}
+.gallery{display:grid; gap:10px; grid-template-columns:repeat(2,1fr)}
+@media (min-width:840px){ .gallery{grid-template-columns:repeat(4,1fr)} }
+.ph{aspect-ratio:4/3; border-radius:12px; border:1px dashed #2a2f4a; display:flex; align-items:center; justify-content:center; color:#8b90a6; background:#0f1118; text-align:center; padding:10px}
+
+/* Navigation */
+.site-nav{
+  position:sticky; top:0; z-index:10;
+  background:rgba(11,12,16,.82); backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.site-nav .bar{
+  max-width:var(--max); margin:0 auto; padding:10px 18px;
+  display:flex; gap:10px; overflow:auto;
+}
+.site-nav a{
+  color:var(--muted); text-decoration:none; white-space:nowrap;
+  padding:6px 10px; border-radius:999px;
+}
+.site-nav a:hover{color:var(--text); background:#0f1118}
+.site-nav a[aria-current="page"]{color:var(--text); background:#0f1118; border:1px solid var(--line)}
